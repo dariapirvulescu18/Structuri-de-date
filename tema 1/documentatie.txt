@@ -1,0 +1,27 @@
+Codul furnizat efectuează o comparație între algoritmul Heap Sort și algoritmul Selection Sort în ceea ce privește timpul lor de execuție pe un vector de dimensiune 10000. 
+
+    Modulul numpy: Modulul numpy este importat cu aliasul "np". Acest modul oferă suport pentru lucrul cu matrice și vectori multidimensionali în Python.
+
+    Modulul time: Modulul time este importat. Acesta furnizează funcționalități pentru măsurarea timpului în secunde.
+
+    Funcția heapify: Această funcție primește un vector (heap) și un indice (i) și efectuează procesul de rearanjare într-un heap a subarborelui cu rădăcina în nodul i.
+
+    Funcția heap_sort: Această funcție sortează vectorul dat folosind algoritmul Heap Sort. Inițial, se parcurge vectorul pentru a construi un heap. Apoi, se extrage succesiv maximul din heap și se adaugă în rezultat. Funcția returnează rezultatul sortat.
+
+    Funcția get_and_remove_max: Această funcție primește un vector și returnează valoarea maximă din vector. Se parcurge vectorul și se găsește poziția maximului. Apoi, se salvează valoarea maximă și se elimină elementul din vector, setându-l la 0.
+
+    Funcția selection_sort: Această funcție sortează vectorul dat folosind algoritmul Selection Sort. Se parcurge vectorul și se apelează funcția get_and_remove_max pentru a obține maximul și a-l adăuga în rezultat. Funcția returnează rezultatul sortat.
+
+    Inițializarea vectorului arr: Se inițializează vectorul cu o permutare aleatoare a numerelor de la 1 la 10000, adăugând 0 la început.
+
+    Copierea vectorului arr: Se realizează o copie a vectorului arr în vectorul arr1.
+
+    Măsurarea timpului: Se măsoară timpul de execuție pentru fiecare algoritm de sortare utilizând funcția time.time().
+
+    Sortarea folosind Heap Sort: Se sortează vectorul arr utilizând algoritmul Heap Sort și se stochează rezultatul în sorted_arr_heap.
+
+    Sortarea folosind Selection Sort: Se sortează vectorul arr1 utilizând algoritmul Selection Sort și se stochează rezultatul în sorted_arr_selection.
+
+    Afișarea timpului de execuție: Se afișează timpul de execuție al fiecărui algoritm de sortare utilizând diferența dintre timpii înregistrați.
+
+    Se observă o diferență semnificativă între cei doi algoritmi, Heap Sort fiind mult mai rapid decât Selection Sort.
